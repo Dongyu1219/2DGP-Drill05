@@ -4,7 +4,7 @@ from pygame.event import clear
 
 open_canvas()
 grass = load_image('TUK_GROUND.png')
-character = load_image('drill_05_charcter_running_image.png')
+character = load_image('drill_05_png.png')
 
 
 def handle_events():
@@ -36,7 +36,7 @@ dir = 0         # 방향 변수 추가. 오른쪽 키 쭈욱 누르면 계속 �
 # fill here
 while running:
     clear_canvas()
-    grass.draw(400, 30)
+    grass.draw(800 // 2, 600 // 2, 800, 600)
     character.clip_draw(frame*100, 100, 100,100, x, 90)
     update_canvas()
     handle_events()
