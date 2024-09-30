@@ -37,12 +37,12 @@ dir = 0         # 방향 변수 추가. 오른쪽 키 쭈욱 누르면 계속 �
 while running:
     clear_canvas()
     grass.draw(800 // 2, 600 // 2, 800, 600)
-    character.clip_draw(frame*100, 100, 100,100, x, 90)
+    character.clip_draw(frame*130, 140, 130,140, x, 90)
     update_canvas()
     handle_events()
-    frame = (frame + 1) %8
+    frame = (frame + 1) %5
     x += dir * 5                #방향 변수에 따라 x가 계속 변한다
-    delay(0.05)
+    delay(0.1)
 
 close_canvas()
 
