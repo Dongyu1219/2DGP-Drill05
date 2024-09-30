@@ -59,6 +59,14 @@ while running:
     frame = (frame + 1) %5
     x += dir * 5                #방향 변수에 따라 x가 계속 변한다
     y += dir2 * 5
+    if x< 50:
+        x = 50
+    if x>750:
+        x = 750
+    if y< 50:
+        y=50
+    if y>550:
+        y=550
     delay(0.08)
 
 close_canvas()
